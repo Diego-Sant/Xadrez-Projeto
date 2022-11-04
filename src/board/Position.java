@@ -2,33 +2,33 @@ package board;
 
 public class Position {
 
-	private Integer linha;
-	private Integer coluna;
+	private Integer row;
+	private Integer column;
 	
-	public Position(Integer linha, Integer coluna) {
-		this.linha = linha;
-		this.coluna = coluna;
-	}
-	
-	public Integer getLinha() {
-		return linha;
-	}
-	
-	public void setLinha(Integer linha) {
-		this.linha = linha;
-	}
-	
-	public Integer getColuna() {
-		return coluna;
+	public Position(Integer row, Integer column) {
+		this.row = row;
+		this.column = column;
 	}
 
-	public void setColuna(Integer coluna) {
-		this.coluna = coluna;
+	public Integer getRow() {
+		return row;
+	}
+
+	public void setRow(Integer row) {
+		this.row = row;
+	}
+
+	public Integer getColumn() {
+		return column;
+	}
+
+	public void setColumn(Integer column) {
+		this.column = column;
 	}
 
 	@Override
 	public String toString() {
-		return linha + ", " + coluna;
+		return row + ", " + column;
 	}
 	
 }
