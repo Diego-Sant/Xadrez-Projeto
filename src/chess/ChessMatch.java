@@ -52,7 +52,7 @@ public class ChessMatch {
 			throw new ChessException("Não existe peça na posição de origem!");
 		}
 		if (!board.piece(position).isThereAnyPossibleMove()) {
-			throw new ChessException("Essa peça não consegue alcançar o destino colocado!");
+			throw new ChessException("Essa peça não consegue se mover!");
 		}
 	}
 	
