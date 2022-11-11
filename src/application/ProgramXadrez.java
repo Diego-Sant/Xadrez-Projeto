@@ -39,6 +39,12 @@ public class ProgramXadrez {
 				if (capturedPiece != null) {
 					captured.add(capturedPiece);
 				}
+				
+				if (chessMatch.getPromoted() != null) {
+					System.out.print("Digite o ícone para promoção (Alt + 4 = ♦)(Alt + 5 = ♣)(Alt + 6 = ♠)(Alt + 0135 = ‡): ");
+					String type = sc.nextLine();
+					chessMatch.replacePromotedPiece(type);
+				}
 			}
 			catch (ChessException e) {
 				System.out.println(e.getMessage());
